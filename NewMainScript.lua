@@ -71,11 +71,11 @@ end
 if isfolder(customdir:gsub("/", "")) == false then
 	makefolder(customdir:gsub("/", ""))
 end
-if isfolder("LegoSmoke") == false then
-	makefolder("LegoSmoke")
+if isfolder("Azura") == false then
+	makefolder("Azura")
 end
-if not betterisfile("LegoSmoke/Whitelist.txt") then
-	writefile("LegoSmoke/Whitelist.txt", "{game.Players.LocalPlayer.Name}")
+if not betterisfile("Azura/Credits.txt") then
+	writefile("Azura/Credits.txt", "Custom Tab Modules: LegoSmoke")
 end
 if isfolder("vape") == false then
 	makefolder("vape")
@@ -268,7 +268,7 @@ GUI.CreateDivider("CUSTOM")
 GUI.CreateButton({
 	["Name"] = "Azura", 
 	["Function"] = function(callback) Azura.SetVisible(callback) end, 
-	["Icon"] = "vape/assets/PinButton.png", 
+	["Icon"] = "vape/assets/VapeLogo2.png", 
 	["IconSize"] = 16,
 })
 local FriendsTextList = {["RefreshValues"] = function() end, ["ObjectListEnabled"] = {}}
