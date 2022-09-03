@@ -486,7 +486,7 @@ SunRays.Parent = game[LightingName]
 ---------------------------------
         end
     end,
-    Default = false,
+    Default = true,
     HoverText = "IMPORTANT! THIS WILL NOT WORK WITH WINTER THEME OR FULLBRIGHT TURN THOSE OFF!"
 })
 
@@ -1033,7 +1033,7 @@ local AnticheatDisabler = COB("Azura", {
 			end)
 		end
 	end,
-	["Default"] = false,
+	["Default"] = true,
 	["HoverText"] = "yes its real stfu"
 })
 AnticheatDisabler.CreateSlider({
@@ -1591,7 +1591,7 @@ local Crosshair = COB("Azura", {
 			end)
 		end
 	end,
-	["Default"] = false,
+	["Default"] = true,
 	["HoverText"] = "Custom crosshair"
 })
 local Reinject = COB("AzuraAzura", {
