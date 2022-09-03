@@ -217,14 +217,6 @@ local LIB = function(tab, argstable)
 	return GuiLibrary["ObjectsThatCanBeSaved"][tab.."Window"]["Api"].CreateOptionsButton(argstable)
 end
 local plrnamelol = game.Players.LocalPlayer.Name
-local ewadasdasdasdfa = LIB("Whitelist", {
-	["Name"]  = plrnamelol,
-	["Function"] = function(callback)
-		if callback then
-		end
-	end,
-	["Default"] = false
-})
 local Friends = GuiLibrary.CreateWindow2({
 	["Name"] = "Friends", 
 	["Icon"] = "vape/assets/FriendsIcon.png", 
