@@ -61,21 +61,8 @@ if not (getasset and requestfunc and queueteleport) then
 	return
 end
 
-if shared.VapeExecuted then
-	error("Vape Already Injected")
-	return
-else
-	shared.VapeExecuted = true
-end
-
 if isfolder(customdir:gsub("/", "")) == false then
 	makefolder(customdir:gsub("/", ""))
-end
-if isfolder("LegoSmoke") == false then
-	makefolder("LegoSmoke")
-end
-if not betterisfile("LegoSmoke/Whitelist.txt") then
-	writefile("LegoSmoke/Whitelist.txt", "{game.Players.LocalPlayer.Name}")
 end
 if isfolder("vape") == false then
 	makefolder("vape")
@@ -181,7 +168,6 @@ local selfdestructsave = coroutine.create(function()
 		end
 	end
 end)
-local GUI = GuiLibrary.CreateMainWindow()
 local GUI = GuiLibrary.CreateMainWindow()
 local Combat = GuiLibrary.CreateWindow({
 	["Name"] = "Combat", 
