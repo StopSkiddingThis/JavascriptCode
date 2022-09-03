@@ -266,8 +266,8 @@ GUI.CreateButton({
 })
 GUI.CreateDivider("CUSTOM")
 GUI.CreateButton({
-	["Name"] = "LegoSmoke", 
-	["Function"] = function(callback) LegoSmoke.SetVisible(callback) end, 
+	["Name"] = "Azura", 
+	["Function"] = function(callback) Azura.SetVisible(callback) end, 
 	["Icon"] = "vape/assets/PinButton.png", 
 	["IconSize"] = 16,
 })
