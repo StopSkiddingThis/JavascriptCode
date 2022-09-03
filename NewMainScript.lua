@@ -213,9 +213,6 @@ local World = GuiLibrary.CreateWindow({
 	["IconSize"] = 16
 })
 local GuiLibrary = shared.GuiLibrary
-local LIB = function(tab, argstable) 
-	return GuiLibrary["ObjectsThatCanBeSaved"][tab.."Window"]["Api"].CreateOptionsButton(argstable)
-end
 local plrnamelol = game.Players.LocalPlayer.Name
 local Friends = GuiLibrary.CreateWindow2({
 	["Name"] = "Friends", 
@@ -1485,7 +1482,7 @@ local tabsortorder2 = {
 	[3] = "Render",
 	[4] = "Utility",
 	[5] = "World",
-	[6] = "LegoSmoke"
+	[6] = "Azura"
 }
 
 local tabcategorycolor = {
@@ -1494,7 +1491,7 @@ local tabcategorycolor = {
 	["RenderWindow"] = Color3.fromRGB(135, 14, 165),
 	["UtilityWindow"] = Color3.fromRGB(27, 145, 68),
 	["WorldWindow"] = Color3.fromRGB(70, 73, 16),
-	["LegoSmokeWindow"] = Color3.fromRGB(0, 255, 255)
+	["AzuraWindow"] = Color3.fromRGB(0, 255, 255)
 }
 
 local function getSaturation(val)
