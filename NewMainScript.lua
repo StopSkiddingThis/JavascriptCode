@@ -3,7 +3,9 @@
 
 
 
-
+if game.Players.LocalPlayer.Name == 'HotCatOnMyLegs' then
+	print("Whitelisted")
+end
 
 
 repeat task.wait() until game:IsLoaded() == true
